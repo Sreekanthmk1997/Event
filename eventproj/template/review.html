@@ -1,0 +1,41 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{%block title%}
+
+
+  <link rel="stylesheet" href="{% static 'assets2/css/styles.min.css'%}" >
+{% endblock %}
+
+{%block content%}
+
+
+<br>
+
+  <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full"
+    data-sidebar-position="fixed" data-header-position="fixed">
+    <div
+      class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <div class="row justify-content-center w-100">
+          <div class="col-md-9 col-lg-6 col-xxl-3">
+            <div class="card mb-0">
+              <div class="card-body">
+                <a href="{% url 'index' %}" class="text-nowrap logo-img text-center d-block py-3 w-100">
+                  <img src="{% static 'img/logo2.png'%}" width="180" alt="">
+                </a>
+
+                <h3 class="text-center text-success-emphasis" style="text-align: center; color: teal; font-family: Avenir, sans-serif; font-size: 26px; font-weight: bold; text-decoration: none; margin-right: 15px;">Thank you for taking the time to share your feedback with us. Your review is greatly appreciated and helps us to continue to improve our services for valued clients like you.</h3><br>
+                <a href="{% url 'index' %}" ><h5 class="text-center text-success-emphasis" style="text-align: center; color: blue; font-family: Avenir, sans-serif;  text-decoration: none; margin-right: 15px;">Back to Home</h5></a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="{% static 'assets2/libs/jquery/dist/jquery.min.js'%}"></script>
+   <script src="{% static 'assets2/libs/bootstrap/dist/js/bootstrap.bundle.min.js'%}"></script>
+
+{% endblock %}

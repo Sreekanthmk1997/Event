@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block title%}
+Services
+{% endblock %}
+
+{%block content%}
+
+
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+
+
+
+
+
+
+<link href="{% static 'style.css' %}" rel="stylesheet" >
+<div class="container p-3 text-center" >
+
+
+    <h1 style="text-align: center; color: teal; font-family: Avenir, sans-serif; font-size: 26px; font-weight: bold; text-decoration: none; margin-right: 15px;">Book Your Events</h1>
+<form action="{% url 'messenger' %}" method="POST">
+
+    {% csrf_token %}
+{{form.as_p}}
+
+<button class="btn btn-primary" type="button" onclick="window.location."><a href="{% url 'alert' %}">Book Now</a></button>
+
+</form>
+</div>
+
+
+
+
+
+{% endblock %}

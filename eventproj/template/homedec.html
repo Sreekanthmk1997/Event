@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/animate.css/animate.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/remixicon/remixicon.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+
+    <link  href="{% static 'port/css/bootstrap.min.css'%}" rel="stylesheet">
+    <link  href="{% static 'port/fontawesome/css/all.min.css'%}" rel="stylesheet">
+    <link  href="{% static 'port/css/templatemo-style.css'%}" rel="stylesheet">
+
+
+
+
+
+<section id="breadcrumbs" class="breadcrumbs" style="margin-top: +0px;">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Portfolio</h2>
+
+      </div>
+    </div>
+</section>
+
+<br>
+<br>
+ <h1 style="text-align:center;color: teal; font-family: Areal, sans-serif; font-size: 36px; font-weight: bold;">HOME DECOR PORTFOLIO</h1>
+
+
+    <div class="container-fluid tm-container-content tm-mt-60">
+            <div class="row mb-4">
+            <h2 class="col-6 tm-text-primary">
+                Latest Photos
+            </h2>
+            <div class="col-6 d-flex justify-content-end align-items-center">
+                <form action="" class="tm-text-primary">
+                    Page <input type="text" value="1" size="1" class="tm-input-paging tm-text-primary"> of 1
+                </form>
+            </div>
+            </div>
+            <div class="row tm-mb-90 tm-gallery">
+        	<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+
+                    <img src="{% static 'portfolio/home1.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+                   </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">18 Oct 2023</span>
+                    <span>9,906 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+
+                    <img src="{% static 'portfolio/home6.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">24 Nov 2023</span>
+                    <span>16,100 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+
+                    <img src="{% static 'portfolio/home3.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">2 Dec 2023</span>
+                    <span>12,460 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+
+                    <img src="{% static 'portfolio/home4.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">20 Dec 2023</span>
+                    <span>11,402 views</span>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+
+                    <img src="{% static 'portfolio/home5.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">4 Jan 2024</span>
+                    <span>16,008 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="{% static 'portfolio/home2.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">20 jan 2024</span>
+                    <span>12,860 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="{% static 'portfolio/home7.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">16 Feb 2024</span>
+                    <span>10,900 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="{% static 'portfolio/home8.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">12 Mar 2024</span>
+                    <span>11,300 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="{% static 'portfolio/home10.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">30 Mar 2024</span>
+                    <span>42,700 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+                    <img src="{% static 'portfolio/floral6.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">8 April 2024</span>
+                    <span>11,402 views</span>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+
+                    <img src="{% static 'portfolio/floral9.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">24 Nov 2023</span>
+                    <span>16,100 views</span>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <figure class="effect-ming tm-video-item">
+
+                    <img src="{% static 'portfolio/home9.jpg' %}" alt="Image" class="img-fluid">
+                    <figcaption class="d-flex align-items-center justify-content-center">
+                        <h2>Click</h2>
+                        <a href="{% url 'services' %}"></a>
+
+                    </figcaption>
+                </figure>
+                <div class="d-flex justify-content-between tm-text-gray">
+                    <span class="tm-text-gray-light">24 Nov 2023</span>
+                    <span>16,100 views</span>
+                </div>
+            </div>
+    </div>
+
+
+{% endblock %}

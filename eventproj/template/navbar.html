@@ -1,0 +1,47 @@
+{% load static %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-image: url('{% static 'img/navbg.png' %}'); background-size: cover; background-position: center;">
+    <!-- Logo -->
+    <a class="navbar-brand" href="{% url 'index' %}"></a>
+        <img src="{% static 'img/logo2.png' %}" alt="Logo" style="height: 150px;">
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto" style="align-items: center;">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'index' %}" style="color: teal; font-family: Avenir, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'about' %}" style="color: teal; font-family: Avenir, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">ABOUT</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'portfolio' %}" style="color: teal; font-family: Avenir, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">PORTFOLIO <span class="sr-only">(current)</span></a>
+            </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'services' %}" style="color: teal; font-family: Avenir, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">BOOKING <span class="sr-only">(current)</span></a>
+                </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{% url 'contact' %}" style="color: teal; font-family: Avenir, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">CONTACT</a>
+            </li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li>
+                <h3 style="color: teal; font-family: Avenir, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">{{ user.username }}</h3>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'signin' %}" style="color: teal; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">Login <span class="glyphicon glyphicon-log-in"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'logout' %}" style="color: teal; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">Logout<span class="glyphicon glyphicon-user"></span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'signup' %}" style="color: teal; font-family: Arial, sans-serif; font-size: 16px; font-weight: bold; text-decoration: none; margin-right: 15px;">Sign Up <span class="glyphicon glyphicon-user"></span></a>
+            </li>
+        </ul>
+    </div>
+</nav>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Events</title>
+  <link rel="stylesheet" href="#">
+
+
+    <style>
+        .footer {
+            background-color: #008080;
+            color: #fff;
+            padding: 40px 0;
+            text-align: left;
+        }
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin: 20px;
+        }
+        .footer-column h3 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .footer-column ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-column ul li {
+            margin-bottom: 10px;
+        }
+        .footer-column ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-column ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-newsletter input[type="email"] {
+            padding: 10px;
+            width: calc(100% - 22px);
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .footer-newsletter button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6347;
+            color: #fff;
+            cursor: pointer;
+        }
+        .footer-newsletter button:hover {
+            background-color: #ff4500;
+        }
+        .footer-social a {
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+        }
+        .footer-social a:hover {
+            text-decoration: underline;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding: 20px;
+            border-top: 1px solid #444;
+        }
+    </style>
+
+
+
+
+</head>
+{% include 'navbar.html' %}
+{% load static %}
+
+{% block content %}
+{% endblock %}
+<body>
+
+{% if messages %}
+        <script type="text/javascript">
+            {% for message in messages %}
+                alert("{{ message|escapejs }}");
+            {% endfor %}
+        </script>
+{% endif %}
+
+
+
+<br>
+
+ <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>PARTY WITH US :</h3>
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>Phone Number: +91-2345678900</li>
+                    <li>Email Address: <a href="mailto:royal@gmail.com">royal@gmail.com</a></li>
+                    <li>Office Address: A108 Adam Street, Kochin, Kerala</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="{% url 'index' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+
+                    <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+
+                    <li><a href="{% url 'contact' %}">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="{% url 'floral' %}">Florals</a></li>
+                    <li><a href="{% url 'wedding' %}">Weddings</a></li>
+                    <li><a href="{% url 'party' %}">Parties</a></li>
+                    <li><a href="{% url 'favors' %}">Party Favors</a></li>
+                    <li><a href="{% url 'styling' %}">Styling</a></li>
+                    <li><a href="{% url 'homedec' %}">Home Decor</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Social Media</h3>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/login">Facebook</a>
+
+                    <a href="https://twitter.com/login">Twitter</a>
+
+                    <a href="https://www.instagram.com/accounts/login/">Instagram</a>
+
+                    <a href="https://www.linkedin.com/login">LinkedIn</a>
+
+                    <a href="https://accounts.google.com/ServiceLogin?service=youtube">YouTube</a>
+
+
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+            <p>&copy; 2024 Royal Event Management Inc. All rights reserved.</p>
+            </div>
+        </div>
+ </footer>
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>

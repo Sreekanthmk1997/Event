@@ -1,0 +1,81 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px; /* Increased width for better form display */
+            margin: 20px auto; /* Center the container */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white; /* White background for the form */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for better visibility */
+        }
+         label {
+            color: #00796b; /* Teal color for labels */
+            display: block;
+            margin-bottom: 5px;
+        }
+
+         input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px; /* Increased padding for better usability */
+            margin: 10px 0; /* Increased margin for better spacing */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+           button[type="submit"] {
+            background-color: #00796b; /* Teal background for the button */
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; /* Full width button */
+            margin-top: 10px; /* Margin to separate button from fields */
+        }
+
+        button[type="submit"]:hover {
+            background-color: #004d40; /* Darker teal on hover */
+        }
+
+
+
+</style>
+
+
+    <div class="container">
+        <h1 style="text-align: center; color: teal; font-family: Avenir, sans-serif; font-size: 26px; font-weight: bold; text-decoration: none; margin-right: 15px;">Sign Up to Your Account</h1>
+        <form action="/signup/" method="post">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email ID" required>
+
+            <label for="password1">Password:</label>
+            <input type="password" id="password1" name="password1" placeholder="Enter a Password" required>
+
+            <label for="password2">Confirm Your Password:</label>
+            <input type="password" id="password2" name="password2" placeholder="Re-Enter Your Password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+
+{% endblock %}
